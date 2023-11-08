@@ -1,0 +1,132 @@
+.portfolio {
+  height: calc(100% - 62px - 36px);
+  .ant-layout {
+    height: 100%;
+  }
+  .ant-menu .ant-menu-item .ant-menu-item-icon,
+  .ant-menu .ant-menu-submenu-title .ant-menu-item-icon {
+    vertical-align: middle !important;
+    padding: 3px 3px;
+    background: var(--color-layer-lighter);
+    border-radius: 20px;
+    font-size: 20px;
+    width: 22px;
+    height: 22px;
+    box-sizing: border-box;
+    circle {
+      stroke: var(--color-text-dark);
+    }
+    path {
+      fill: var(--color-text-dark);
+    }
+    rect {
+      stroke: var(--color-text-dark);
+    }
+  }
+  .ant-menu .ant-menu-item-selected .ant-menu-item-icon,
+  .ant-menu .ant-menu-submenu-title .ant-menu-item-icon {
+    circle {
+      stroke: var(--color-text-base);
+    }
+    path {
+      fill: var(--color-text-base);
+    }
+    rect {
+      stroke: var(--color-text-base);
+    }
+  }
+}
+
+// .ant-menu-title-content{
+//   display: flex;
+//   align-items: center;
+// }
+
+.portfolio-sider {
+  background: var(--color-layer-base) !important;
+  .ant-menu-dark {
+    background: var(--color-layer-base) !important;
+  }
+}
+.site-layout {
+  background: var(--color-layer-base) !important;
+  &-right {
+    height: 100%;
+    overflow-y: hidden;
+  }
+}
+.portfolio-menu-top {
+  padding: 12px 10px 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--color-text-dark);
+  align-items: center;
+  .portfolio-menu-top-collapsible {
+    padding: 4px 8px;
+    line-height: 16px;
+    cursor: pointer;
+    background: var(--color-layer-light);
+    border-radius: 10px;
+    &:hover {
+      color: #f7f7f7;
+      background-color: var(--color-layer-lighter);
+    }
+  }
+}
+.ant-layout-sider-children {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.portfolio-menu-withdraw {
+  display: flex;
+  padding: 0 16px 16px;
+  justify-content: space-between;
+  button {
+    width: 125px;
+  }
+}
+.portfolio-menu-top-collapsed {
+  padding: 12px 10px 8px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+}
+.nostr-asset-container {
+  height: 100%;
+  overflow-y: auto;
+}
+.nostr-asset-form {
+  padding: 60px 0;
+  &-title {
+    text-align: center;
+  }
+  &-container {
+    margin: 0 auto;
+    padding-top: 20px;
+    .ant-form-item-label {
+      text-align: left;
+    }
+    .ant-radio-button-wrapper {
+      min-width: 120px;
+      text-align: center;
+    }
+  }
+  &-radio {
+    margin: 0 auto;
+    text-align: center;
+  }
+  &-tip {
+    width: 600px;
+    padding: 10px;
+    background-color: var(--color-layer-light);
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+}
